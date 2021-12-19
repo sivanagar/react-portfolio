@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useState} from 'react';
 import About from './components/About'
 import Header from './components/Header'
 import Portfolio from './components/Portfolio'
@@ -10,13 +10,23 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
+  const [currentNav, setCurrentNav] = useState('home');
+  const [navSelected, setNavSelected] = useState('home');
+
   return (
    <div>
-     <Header ></Header>
+     <Header 
+      setCurrentNav={setCurrentNav}
+      currentNav={currentNav}
+      navSelected={navSelected}
+      setNavSelected={setNavSelected}
+     ></Header>
      <main>
-       <About></About>
-       <Portfolio></Portfolio>
-       <ContactForm></ContactForm>
+     {navSelected=='About' ||navSelected=='home' ? (<About></About>) : (<div></div>)}
+     {navSelected=='Portfolio' ||navSelected=='home' ? (<Portfolio></Portfolio>) : (<div></div>)}
+     {navSelected=='Contact' ||navSelected=='home' ? (<ContactForm></ContactForm>) : (<div></div>)}
+       
+       
      </main>
      <Footer></Footer>
    </div>

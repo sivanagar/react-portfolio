@@ -1,15 +1,31 @@
-import React from "react";
+import React  from "react";
 import Menu from '../Menu';
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Header() {
+function Header(props) {
+  const {
+    setCurrentNav,
+    currentNav,
+    navSelected,
+    setNavSelected
+  } = props;
+
+
   return (
     <Navbar bg="dark" variant="dark">
       <Container>
-      <Navbar.Brand>Sivan Kaplan</Navbar.Brand>
-      <Menu></Menu>
+      <Navbar.Brand onClick={() => setNavSelected('home')}>
+        Sivan Kaplan
+        
+        </Navbar.Brand>
+      <Menu
+        setCurrentNav={setCurrentNav}
+        currentNav={currentNav}
+        navSelected={navSelected}
+        setNavSelected={setNavSelected}
+      ></Menu>
       </Container>
     </Navbar>
   )
