@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import About from './components/About'
 import Header from './components/Header'
+import Portfolio from './components/Portfolio'
 import ContactForm from './components/Contact'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -10,8 +12,10 @@ function App() {
      <Header ></Header>
      <main>
        <About></About>
-       //display based on the nav selection
+       <Portfolio></Portfolio>
+       <ContactForm></ContactForm>
      </main>
+     <Footer></Footer>
    </div>
   );
 }
