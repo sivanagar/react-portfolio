@@ -5,9 +5,9 @@ function Footer() {
   return (
     <footer>
       <ul>
-        <li>GitHub</li>
-        <li>Linkdn</li>
-        <li>Twitter</li>
+        <li><a href="https://github.com/sivanagar">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/sivan-kaplan-751961228/">Linkedin</a></li>
+        <li><a href="https://twitter.com/SivanKaplan">Twitter</a></li>
       </ul>
     </footer>
   );

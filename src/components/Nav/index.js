@@ -2,7 +2,7 @@ import React from 'react';
 
 function Nav() {
   return (
-  <nav>
+  <nav className="justify-content-center">
     <ul>
       <li>About Me</li>
       <li>Portfolio</li>

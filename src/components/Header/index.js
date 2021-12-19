@@ -3,8 +3,8 @@ import Nav from '../Nav';
 
 function Header() {
   return (
-    <header>
-      <h1>This is Header</h1>
+    <header className="header">
+      <h1>Sivan Kaplan</h1>
       <Nav></Nav>
     </header>
   )
