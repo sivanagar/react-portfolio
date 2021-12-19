@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import { Container , Form , Button , Alert} from 'react-bootstrap';
 
 function ContactForm() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -34,29 +35,29 @@ function ContactForm() {
   };
   
   return (
-    <section>
-      <h1 data-testid="h1tag">Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
-        </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
-          <input type="email" defaultValue={email} onBlur={handleChange} name="email" />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5"  />
-        </div>
+    <Container >
+      <h1 >Contact Me</h1>
+      <Form id="contact-form" onSubmit={handleSubmit}>
+        <Form.Group className="mb-3">
+          {/* <Form.Label htmlFor="name">Name:</Form.Label> */}
+          <Form.Control type="text" placeholder="Your Name" defaultValue={name} onBlur={handleChange} name="name" />
+        </Form.Group>
+        <Form.Group className="mb-3">
+          {/* <Form.Label htmlFor="email">Email address:</Form.Label> */}
+          <Form.Control type="email" placeholder="Your email" defaultValue={email} onBlur={handleChange} name="email" />
+        </Form.Group>
+        <Form.Group className="mb-3">
+          {/* <Form.Label htmlFor="message">Message:</Form.Label> */}
+          <Form.Control as="textarea" placeholder="Your Message" name="message" defaultValue={message} onBlur={handleChange} rows="5"  />
+        </Form.Group>
         {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
+          <Alert variant="danger">
+            {errorMessage}
+          </Alert>
         )}
-        <button data-testid="buttonTag" type="submit">Submit</button>
-      </form>
-    </section>
+        <Button variant="secondary" size="lg" type="submit">Submit</Button>
+      </Form>
+    </Container>
   )
 }
 
