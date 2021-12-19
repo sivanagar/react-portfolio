@@ -1,14 +1,19 @@
 import React from 'react';
+import {Card, Col} from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Project(props) {
   const {currentProject} = props;
   return (
-    <div>
-    <h2>{currentProject.title}</h2>
-    <img src={currentProject.imageSrc} alt={currentProject.title}/>
-      <div>GitHub Repo</div>
-      <div>Link to project</div>
-    </div>
+    <Col md="4" >
+    <Card className='m-1'>
+      <Card.Title className='m-1'>
+        {currentProject.title}
+      </Card.Title>
+      {console.log(`${currentProject.imageSrc}`)}
+      <Card.Img src={require('../../assets/project-images/giftby.jpg')} alt={currentProject.title}/>
+    </Card>
+    </Col>
     
       
       
