@@ -1,8 +1,7 @@
-
-:root {
+/* :root {
   --primary: #8c54ff;
-  --secondary: #F3A847;
-  --tertiary: #B12704;
+  --secondary: #f3a847;
+  --tertiary: #b12704;
   --light: #fafafa;
   --dark: #000000;
   --darker: #111111;
@@ -10,7 +9,6 @@
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
-
 }
 
 * {
@@ -23,9 +21,15 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 0 50px;
 }
 
+@media only screen and (max-width: 600px) {
+  .header {
+    padding: 0 30px;
+  }
+}
 
 ul {
   display: flex;
@@ -53,4 +57,4 @@ footer ul {
 footer a {
   color: #c6c9d8;
   text-decoration: none;
-}
+} */

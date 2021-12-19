@@ -1,12 +1,17 @@
 import React from "react";
-import Nav from '../Nav';
+import Menu from '../Menu';
+import Navbar from 'react-bootstrap/Navbar'
+import Container from 'react-bootstrap/Container'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Header() {
   return (
-    <header className="header">
-      <h1>Sivan Kaplan</h1>
-      <Nav></Nav>
-    </header>
+    <Navbar bg="dark" variant="dark">
+      <Container>
+      <Navbar.Brand>Sivan Kaplan</Navbar.Brand>
+      <Menu></Menu>
+      </Container>
+    </Navbar>
   )
 };
 

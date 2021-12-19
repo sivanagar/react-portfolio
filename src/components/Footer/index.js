@@ -1,14 +1,19 @@
 import React from 'react';
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+import Container from 'react-bootstrap/Container'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-//TODO: add links and classes
 function Footer() {
   return (
     <footer>
-      <ul>
-        <li><a href="https://github.com/sivanagar">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/sivan-kaplan-751961228/">Linkedin</a></li>
-        <li><a href="https://twitter.com/SivanKaplan">Twitter</a></li>
-      </ul>
+       <Navbar bg="dark" variant="dark" className="justify-content-center">
+       <Nav >
+         <Nav.Item><Nav.Link href="https://github.com/sivanagar">GitHub</Nav.Link></Nav.Item>
+         <Nav.Item><Nav.Link href="https://www.linkedin.com/in/sivan-kaplan-751961228/">Linkedin</Nav.Link></Nav.Item>
+         <Nav.Item><Nav.Link href="https://twitter.com/SivanKaplan">Twitter</Nav.Link></Nav.Item>
+      </Nav>
+      </Navbar>
     </footer>
   );
 }
