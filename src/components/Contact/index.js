@@ -35,8 +35,8 @@ function ContactForm() {
   };
   
   return (
-    <Container >
-      <h2 >Contact Me</h2>
+    <Container className="m-5">
+      <h2 className="heading" >Contact Me</h2>
       <Form id="contact-form" onSubmit={handleSubmit}>
         <Form.Group className="mb-3">
           {/* <Form.Label htmlFor="name">Name:</Form.Label> */}

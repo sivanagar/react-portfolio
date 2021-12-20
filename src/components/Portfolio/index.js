@@ -6,27 +6,33 @@ function Portfolio() {
   const [projects] = useState([
     {
       title: 'Giftby',
-      imageSrc: '../../assets/project-images/giftby.jpg',
+      imageSrc: 'giftby.jpg',
       github: 'https://github.com/sivanagar/theNextGen',
       link: 'https://secret-santa-project.herokuapp.com/'
     },
     {
       title: 'National Park Search',
-      imageSrc: '../../assets/project-images/giftby.jpg',
+      imageSrc: 'NationalParkSearch.png',
       github: 'https://github.com/sivanagar/NationalParkSearch',
       link: 'https://sivanagar.github.io/NationalParkSearch/'
     },
     {
       title: 'Weather Dashboard',
-      imageSrc: '../../assets/project-images/giftby.jpg',
+      imageSrc: 'weatherDashboard.png',
       github: 'https://github.com/sivanagar/WeatherDashboard',
       link: 'https://sivanagar.github.io/WeatherDashboard/'
+    },
+    {
+      title: 'Team Webpage Generator',
+      imageSrc: 'team.png',
+      github: 'https://github.com/sivanagar/TeamProfileGenerator',
+      link: 'https://github.com/sivanagar/TeamProfileGenerator'
     }
   ]);
 
   return (
     <Container>
-      <h2>Portfolio</h2>
+      <h2 className="heading">Portfolio</h2>
       <CardGroup>
       {projects.map(project => (
         <Project currentProject={project} key={project.title}></Project>
