@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.ccd09f43.css",
+    "main.js": "/react-portfolio/static/js/main.1d88a1ff.js",
+    "static/js/787.cf250828.chunk.js": "/react-portfolio/static/js/787.cf250828.chunk.js",
+    "static/media/NationalParkSearch.png": "/react-portfolio/static/media/NationalParkSearch.81be6f7a4b316d77bef1.png",
+    "static/media/myimage.png": "/react-portfolio/static/media/myimage.422378dedf87487e726b.png",
+    "static/media/team.png": "/react-portfolio/static/media/team.ad56da1de766ad07e8d3.png",
+    "static/media/weatherDashboard.png": "/react-portfolio/static/media/weatherDashboard.fd97db6379a17f9c61d0.png",
+    "static/media/giftby.jpg": "/react-portfolio/static/media/giftby.f63d091724f8e558b5af.jpg",
+    "static/media/github-brands.svg": "/react-portfolio/static/media/github-brands.e2f073269da5b56e82387b15c3b59f5a.svg",
+    "index.html": "/react-portfolio/index.html",
+    "main.ccd09f43.css.map": "/react-portfolio/static/css/main.ccd09f43.css.map",
+    "main.1d88a1ff.js.map": "/react-portfolio/static/js/main.1d88a1ff.js.map",
+    "787.cf250828.chunk.js.map": "/react-portfolio/static/js/787.cf250828.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ccd09f43.css",
+    "static/js/main.1d88a1ff.js"
+  ]
+}
