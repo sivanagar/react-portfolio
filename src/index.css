@@ -9,11 +9,19 @@
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
-  
 }
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f0ea;
+  color: #534b52;
+}
+
+.navbar {
+  color: #2d232e;
 }
 .myImage {
   width: 100%;
@@ -26,11 +34,17 @@
 }
 .heading {
   font-size: 50px;
+  color: #2d232e;
 }
 
+.project {
+  background-color: #474448 !important;
+  border-color: #474448 !important;
+  color: #f1f0ea;
+}
 
 .card:hover {
-  background: #309df0;
+  background: #536b78;
   color: #fff;
   transform: scale(1.1);
   z-index: 9;

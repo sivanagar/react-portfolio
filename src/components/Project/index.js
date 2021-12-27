@@ -8,7 +8,7 @@ function Project(props) {
   return (
     <Col md="4">
       <Card className="m-3">
-        <Card.Header className="d-flex justify-content-between">
+        <Card.Header className="project cardheader d-flex justify-content-between">
           <Card.Title className="m-1">{currentProject.title}</Card.Title>
           <a href={currentProject.github}>
             <Image className="icon" src={githubIcon} />

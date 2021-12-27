@@ -14,7 +14,7 @@ function Header(props) {
 
 
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar>
       <Container>
       <Navbar.Brand onClick={() => setNavSelected('home')}>
         Sivan Kaplan
